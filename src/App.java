@@ -7,5 +7,12 @@ public class App {
         int titleSize = 32;
         int boardWidth = columnCount * titleSize;
         int boardHeight = rowCount * titleSize;
+
+        JFrame frame = new JFrame("Pac man");
+        frame.setVisible(true);
+        frame.setSize(boardWidth, boardHeight);
+        frame.setLocationRelativeTo(null);
+        frame.setResizable(false);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 }
